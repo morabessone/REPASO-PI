@@ -1,6 +1,0 @@
-# dependencies
-./node_modules
-/.pnp
-.pnp.js
-./package-lock.json
-/api2/package-lock.json
