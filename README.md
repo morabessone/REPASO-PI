@@ -46,7 +46,7 @@ El backend tendra los siguientes modelos:
 - id
 - name
 - species
-- origen
+- origin
 - image
 - created 
 
