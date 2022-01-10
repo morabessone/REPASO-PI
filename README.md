@@ -36,7 +36,6 @@ El contenido de client fue creado usando: Create React App.
 # Rick and Morty App
 En este ejercicio vamos a crear una APP que utilice la API de [Rick and Morty](https://rickandmortyapi.com/). Vamos a crear nuestra app utilizando **REACT* y *REDUX** en la que podremos:
 - Ver todos los personajes en la página principal.
-- Ver los episodios en los que estuvo un personaje entrando a su detalle.
 - Crear un personaje.
 
 ## Backend
