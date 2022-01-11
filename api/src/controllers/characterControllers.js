@@ -15,7 +15,7 @@ const getAllCharacters = async (req, res) => {
                     episode: ch.episode,
                 }
             })
-            let response = [...apiResponse, db]
+            let response = [...apiResponse, ...db]
             res.send(response)
         }
     } catch(e) {
