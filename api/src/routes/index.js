@@ -1,12 +1,12 @@
 const { Router } = require("express");
-const personajes = require("./characterRouter");
-const episodio = require("./episodeRouter");
+const characterRoutes = require("./characterRouter");
+const characterEpisodes = require("./episodeRouter");
 
 const router = Router();
 
 // Configurar los routers
-router.use("/character", personajes);
-router.use("/episode", episodio);
+router.use("/character", characterRoutes);
+router.use("/episode", characterEpisodes);
 
 module.exports = router;
 

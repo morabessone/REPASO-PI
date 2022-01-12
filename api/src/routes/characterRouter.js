@@ -1,5 +1,5 @@
 const { Router } = require("express");
-const { getAllCharacters } = require("../controllers/characterControllers");
+const { getAllCharacters, postCharacter } = require("../controllers/characterControllers");
 
 const characterRouter = Router();
 
@@ -7,5 +7,6 @@ const characterRouter = Router();
 // http:localhost:3001/character
 
 characterRouter.get("/getCharacters", getAllCharacters)
+characterRouter.post("/create", postCharacter)
 
 module.exports = characterRouter;

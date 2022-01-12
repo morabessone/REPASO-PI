@@ -24,7 +24,24 @@ const getAllCharacters = async (req, res) => {
 }
 
 const postCharacter = async (req, res) => {
-
+    try {
+        const aCharacter = req.body;
+        let [newCharacter, ch] = await Character.findOrCreate({
+            where: {
+                name: aCharacter.name,
+                species: aCharacter.species,
+                origin: aCharacter.origin,
+                image: aCharacter.image,
+                created: true,
+            }
+        })
+        // console.log("newCharacter: ", newCharacter);
+        // console.log("ch: ", ch);
+        await newCharacter.setEpisodes(aCharacter.episode)
+        return res.send(newCharacter)
+    } catch(e) {
+        console.error(e)
+    }
 }
 
 module.exports = {
