@@ -22,6 +22,9 @@ module.exports = (sequelize) => {
     },
     image: {
       type: DataTypes.STRING,
+      defaultValue:
+        "https://images-na.ssl-images-amazon.com/images/I/91MteSqsrJL.jpg",
+      allowNull: false,
     },
     created: {
       type: DataTypes.BOOLEAN,

@@ -18,7 +18,7 @@ const getEpisodes = async (req, res) => {
         },
       });
     });
-    // return res.send(response)
+    return res.send(response);
   } catch (e) {
     console.error(e);
   }

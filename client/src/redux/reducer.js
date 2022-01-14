@@ -1,4 +1,4 @@
-import { OBTENER_TODOS } from "./actions";
+import { OBTENER_TODOS, FILTER, OBTENER_EPISODIOS } from "./actions";
 
 const initialState = {
   personajes: [], // todos los personajes guardados
@@ -15,6 +15,29 @@ export default function rootReducer(state = initialState, action) {
         personajes: action.payload, // arreglo de obj personajes
         filtrados: action.payload, // que viene del back
       };
+    case OBTENER_EPISODIOS:
+      return {
+        ...state,
+        episodios: action.payload,
+      };
+    case FILTER:
+      if (action.payload === "Default") {
+        return {
+          ...state,
+          filtrados: state.personajes, // vuelvo a cargar todos los pjs
+        };
+      } else if (action.payload) {
+        return {
+          ...state,
+          filtrados: state.personajes.filter(
+            (pj) => pj.species === action.payload
+          ), // "Human" o "Alien"
+        };
+      } else {
+        return {
+          ...state,
+        };
+      }
     default:
       return state;
   }
