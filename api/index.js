@@ -1,5 +1,4 @@
 const server = require("./src/app.js");
-const { getEpisodes } = require("./src/controllers/episodeControllers.js");
 const { conn } = require("./src/db.js");
 
 // Syncing all the models at once.
