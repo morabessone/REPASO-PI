@@ -82,8 +82,6 @@ Tendrá las siguientes rutas:
 Se debe desarrollar una aplicación de React/Redux que contenga las siguientes pantallas/rutas.
 
 **Ruta principal**
-
-Debe contener:
 - [ ] Área donde se verá el listado de personajes, incluyendo:
     - Imágen 
     - Nombre
