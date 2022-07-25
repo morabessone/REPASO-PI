@@ -100,7 +100,7 @@ Se debe desarrollar una aplicación de React/Redux que contenga las siguientes p
 
 ## Extras
 Dependiendo de los tiempos que lleve el repaso, se podría agregar:
-- [ ] Paginado
+- [ ] Ordenamiento
 - [ ] Botón para filtrar por personajes traidos de la Api o creados en la BDD
 - [ ] GET /character/:id
 
